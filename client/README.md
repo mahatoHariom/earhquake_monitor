@@ -20,7 +20,6 @@ A full-stack application for monitoring and analyzing earthquake sensor data. Th
 - TanStack Query for data fetching
 - Recharts for data visualization
 - Tailwind CSS for styling
-- Testing with Vitest and React Testing Library
 
 ### Backend
 
@@ -41,34 +40,16 @@ A full-stack application for monitoring and analyzing earthquake sensor data. Th
 1. Clone the repository:
 
 ```bash
-git clone [repository-url]
+git clone git@github.com:mahatoHariom/earhquake_monitor.git
 cd earthquake-monitoring-system
 ```
 
 2. Install dependencies:
 
 ```bash
-# Install backend dependencies
-cd server
-npm install
 
 # Install frontend dependencies
-cd ../client
 npm install
-```
-
-3. Set up the database:
-
-```bash
-# In the server directory
-npx prisma migrate dev
-```
-
-4. Create a `.env` file in the server directory:
-
-```
-DATABASE_URL="postgresql://username:password@localhost:5432/earthquake_db"
-PORT=9797
 ```
 
 ## Running the Application
@@ -85,6 +66,7 @@ npm run dev
 ```bash
 # In the client directory
 npm run dev
+
 ```
 
 The application will be available at:
@@ -94,12 +76,6 @@ The application will be available at:
 
 ## Testing
 
-Run tests for the backend:
-
-```bash
-# In the server directory
-npm test
-```
 
 Run tests for the frontend:
 
@@ -108,41 +84,10 @@ Run tests for the frontend:
 npm test
 ```
 
-## Project Structure
-
-```
-├── client/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── hooks/
-│   │   ├── types/
-│   │   └── App.tsx
-│   ├── tests/
-│   └── package.json
-├── server/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── services/
-│   │   ├── routes/
-│   │   └── middleware/
-│   ├── prisma/
-│   └── package.json
-└── README.md
-```
-
-## API Endpoints
-
 - `POST /api/load-data`: Upload and process sensor data
 - `GET /api/monthly-readings`: Get statistics for a specific month
 - `GET /api/daily-readings`: Get statistics for a specific day
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
