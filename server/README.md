@@ -1,4 +1,4 @@
-// README.md
+
 
 # Earthquake Reading API
 
@@ -25,7 +25,7 @@ A RESTful API service for managing and analyzing earthquake sensor readings.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/earthquake-api.git
+git clone https://github.com/mahatoHariom/earthquake-api.git
 cd earthquake-api
 ```
 
@@ -73,10 +73,7 @@ npm test
 POST /api/load-data
 Content-Type: application/json
 
-{
-  "fileContent": "..."
-}
-```
+
 
 ### Get Monthly Readings
 
@@ -104,18 +101,6 @@ npm run dev
 npm run build
 ```
 
-3. Run linting:
-
-```bash
-npm run lint
-```
-
-4. Run type checking:
-
-```bash
-npm run type-check
-```
-
 ## 📁 Project Structure
 
 ```
@@ -127,14 +112,3 @@ src/
 ├── utils/         # Helper functions
 └── app.ts         # Application entry point
 ```
-
-## 🧪 Testing Strategy
-
-- Unit tests for services
-- Integration tests for API endpoints
-- Mock database for testing
-- Test coverage reporting
-
-## 📜 License
-
-MIT
