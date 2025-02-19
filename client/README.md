@@ -1,6 +1,6 @@
 # Earthquake Monitoring System
 
-A full-stack application for monitoring and analyzing earthquake sensor data. The system processes raw sensor data, stores it in a PostgreSQL database, and provides a web interface for visualization and analysis.
+A full-stack application for monitoring and analyzing earthquake sensor data. The system processes raw sensor data and provides a web interface for visualization and analysis.
 
 ## Features
 
@@ -9,7 +9,6 @@ A full-stack application for monitoring and analyzing earthquake sensor data. Th
 - Maximum, minimum, and count statistics for earthquake frequencies
 - Interactive data visualization
 - Responsive web interface
-- RESTful API backend
 
 ## Tech Stack
 
@@ -21,18 +20,9 @@ A full-stack application for monitoring and analyzing earthquake sensor data. Th
 - Recharts for data visualization
 - Tailwind CSS for styling
 
-### Backend
-
-- Node.js with Express
-- TypeScript
-- Prisma ORM
-- PostgreSQL database
-- Jest for testing
-
 ## Prerequisites
 
 - Node.js (v16 or higher)
-- PostgreSQL (v13 or higher)
 - npm or yarn
 
 ## Installation
@@ -42,40 +32,38 @@ A full-stack application for monitoring and analyzing earthquake sensor data. Th
 ```bash
 git clone git@github.com:mahatoHariom/earhquake_monitor.git
 cd earthquake-monitoring-system
+cd client
 ```
 
 2. Install dependencies:
 
 ```bash
-
 # Install frontend dependencies
 npm install
 ```
 
 ## Running the Application
 
-1. Start the backend server:
-
-```bash
-# In the server directory
-npm run dev
-```
-
-2. Start the frontend development server:
+1. Start the frontend development server:
 
 ```bash
 # In the client directory
 npm run dev
-
 ```
 
 The application will be available at:
 
 - Frontend: http://localhost:5173
-- Backend: http://localhost:9797
+
+## Environment Variables
+
+Create a `.env` file in the root of the project and add the following:
+
+```bash
+VITE_API_BASE_URL=http://localhost:9797/api
+```
 
 ## Testing
-
 
 Run tests for the frontend:
 
@@ -84,11 +72,7 @@ Run tests for the frontend:
 npm test
 ```
 
-- `POST /api/load-data`: Upload and process sensor data
-- `GET /api/monthly-readings`: Get statistics for a specific month
-- `GET /api/daily-readings`: Get statistics for a specific day
-
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
