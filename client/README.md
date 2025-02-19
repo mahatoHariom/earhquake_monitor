@@ -63,14 +63,6 @@ Create a `.env` file in the root of the project and add the following:
 VITE_API_BASE_URL=http://localhost:9797/api
 ```
 
-## Testing
-
-Run tests for the frontend:
-
-```bash
-# In the client directory
-npm test
-```
 
 ## License
 
